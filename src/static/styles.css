@@ -37,6 +37,7 @@ main {
 
 @media (min-width: 768px) {
   main {
+    display: grid; /* changed: use grid so grid-template-columns applies */
     grid-template-columns: 2fr 1fr;
   }
 }
@@ -79,6 +80,12 @@ section h3 {
   padding-left: 20px;
   margin-top: 10px;
   color: #555;
+  font-size: 0.95rem; /* slightly smaller for compactness */
+  line-height: 1.4;
+}
+
+.activity-card li {
+  margin-bottom: 6px; /* space between participant items */
 }
 
 .form-group {
